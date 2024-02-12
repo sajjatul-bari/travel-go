@@ -73,6 +73,7 @@ body {
 }
 
 .form {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,5 +97,95 @@ body {
   background: #fa9843;
   color: white;
 }
-
 /* slider end */
+/* header end */
+/* Popular start */
+.popular {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.h3-header {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.img-size {
+  width: 470px;
+}
+.p-primary {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: rgba(0, 0, 0, 0.514);
+}
+#ul-li {
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.popular button {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+/* Popular end */
+/* destination start */
+.destination {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.destination-area {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.destination-area h3 {
+  margin-bottom: 0px;
+}
+/* destination end */
+/* choose us start */
+.choose-us {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.choose-us-area {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.choose-us-area h3 {
+  margin-bottom: 0px;
+}
+.card-area1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.374);
+  padding: 30px;
+  border-radius: 20px;
+}
+.card1 {
+  background-color: #fffbf7;
+}
+.card2 {
+  background-color: #f5fdff;
+}
+.card3 {
+  width: calc(50% - 70px);
+  background-color: #fef6f6;
+  margin: 0 auto;
+}
+.card-img {
+  height: 50px;
+}
+/* choose us end */
