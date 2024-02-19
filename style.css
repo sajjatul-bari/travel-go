@@ -37,6 +37,19 @@ body {
   list-style-type: none;
 }
 /* menu end */
+.btn-primary {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  background: #7d0fc6;
+  color: white;
+}
+.btn-primary:hover {
+  border: 1px solid #7d0fc6;
+  background: transparent;
+  color: #7d0fc6;
+}
 
 /* slider start */
 .slider {
@@ -88,15 +101,7 @@ body {
   margin-left: 5px;
   font-weight: 600;
 }
-.btn-primary {
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  margin-left: 5px;
-  font-weight: 600;
-  background: #fa9843;
-  color: white;
-}
+
 /* slider end */
 /* header end */
 /* Popular start */
@@ -105,14 +110,15 @@ body {
   gap: 30px;
   width: 90%;
   margin: 0 auto;
+  padding: 50px 0px;
+}
+.img-size {
+  width: 32em;
 }
 .h3-header {
   font-size: 42px;
   font-weight: 600;
   margin-bottom: 20px;
-}
-.img-size {
-  width: 470px;
 }
 .p-primary {
   font-size: 15px;
@@ -189,3 +195,167 @@ body {
   height: 50px;
 }
 /* choose us end */
+/* discounts start */
+.discounts {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+.discounts-area {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.discounts-area h3 {
+  margin-bottom: 0px;
+}
+/* discounts end */
+/* booking start */
+
+.booking {
+  width: 90%;
+  height: 30em;
+  margin: 0 auto;
+  background-image: url(Images/Group\ 39.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.booking-area {
+  background-color: rgba(247, 251, 255, 0.853);
+  margin: 30px 50px 30px 0px;
+  height: 60%;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 40px;
+}
+.booking-1 {
+  background-color: #07021100;
+  border: none;
+}
+.box-area {
+  display: flex;
+}
+.box {
+  display: flex;
+  margin-right: 20px;
+}
+.box img {
+  height: 20px;
+  margin-right: 10px;
+}
+.b-heading {
+  font-weight: 700;
+  line-height: 2.5em;
+  margin-top: 10px;
+}
+.b-heading3 {
+  font-weight: 700;
+  line-height: 2.5em;
+  color: #7d0fc6;
+  margin-bottom: 10px;
+}
+.booking-s2 {
+  margin-left: 50px;
+}
+.button-area {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px 50px 0px;
+}
+
+/* booking end */
+/* newsletter start */
+.newsletter {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+.newsletter-area1 {
+  border: 1px solid #7d0fc6;
+  border-radius: 20px;
+  padding: 30px;
+  width: 40%;
+}
+.newsletter-area2 {
+  width: 60%;
+}
+.newsletter-area2 img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+}
+.input-area input {
+  padding: 15px 20px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.b-heading4 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 2.5em;
+  margin-top: 10px;
+}
+.newsletter hr {
+  margin: 20px 0px;
+}
+.save {
+  background-color: #7d0fc6;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 15%;
+  text-align: center;
+  transform: rotate(-20deg);
+  position: absolute;
+  margin-left: 24.5em;
+  margin-top: -8.1em;
+}
+/* newsletter end */
+
+/* footer start */
+.footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text-area {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.text-area p {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.social {
+  display: flex;
+  gap: 20px;
+}
+.social > img {
+  height: 3em;
+}
+/* footeer end */
