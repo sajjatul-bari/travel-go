@@ -19,9 +19,13 @@ body {
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+  padding: 20px 0px;
 }
 .logo-img {
-  height: 13em;
+  height: 5em;
+}
+.link-img {
+  display: none;
 }
 .link-text2 {
   display: flex;
@@ -30,13 +34,30 @@ body {
 .link-text a {
   text-decoration: none;
   color: black;
-  margin: 0px 10px;
-  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 20px;
+  font-size: 16px;
+}
+.link-text a:active {
+  color: #7d0fc6;
 }
 .link-text li {
   list-style-type: none;
 }
 /* menu end */
+.btn-header {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  background: #7d0fc6;
+  color: white;
+  margin-left: 5px;
+}
+.btn-header:hover {
+  color: #7d0fc6;
+  background: white;
+}
 .btn-primary {
   padding: 15px 30px;
   border-radius: 10px;
@@ -44,6 +65,7 @@ body {
   font-weight: 600;
   background: #7d0fc6;
   color: white;
+  border: 1px solid #7d0fc6;
 }
 .btn-primary:hover {
   border: 1px solid #7d0fc6;
@@ -83,17 +105,29 @@ body {
 .slider-text p {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.664);
+  margin-bottom: 40px;
 }
 
 .form {
-  width: auto;
+  width: 51%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.236);
+}
+.form-area {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 0px 0px 0px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.494);
 }
+#when1 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
 #when {
   padding: 10px 20px;
   border-radius: 10px;
@@ -106,11 +140,14 @@ body {
 /* header end */
 /* Popular start */
 .popular {
+  background-color: #f3f3f3;
+  padding: 100px 0px;
+}
+.popular-main {
   display: flex;
   gap: 30px;
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0px;
 }
 .img-size {
   width: 32em;
@@ -151,6 +188,59 @@ body {
 .destination-area h3 {
   margin-bottom: 0px;
 }
+.collage-img {
+  padding-top: 50px;
+}
+.img-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.country {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+}
+.country:hover {
+  opacity: 0.8;
+}
+.country:hover h3 {
+  z-index: 2;
+}
+.maldives {
+  background-image: url(Images/Rectangle\ 5.png);
+  width: 50%;
+}
+.indonesia {
+  background-image: url(Images/Rectangle\ 8.png);
+  width: 50%;
+}
+.srilanka {
+  background-image: url(Images/Rectangle\ 6.png);
+  width: 30%;
+}
+.america {
+  background-image: url(Images/Rectangle\ 7.png);
+  width: 40%;
+}
+.kashmir {
+  background-image: url(Images/Rectangle\ 9.png);
+  width: 30%;
+}
+.bangladesh {
+  background-image: url(Images/Rectangle\ 11.png);
+  width: 40%;
+}
+.bandarban {
+  background-image: url(Images/Rectangle\ 10.png);
+  width: 60%;
+}
 /* destination end */
 /* choose us start */
 .choose-us {
@@ -163,6 +253,7 @@ body {
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 50px;
 }
 .choose-us-area h3 {
   margin-bottom: 0px;
@@ -191,6 +282,10 @@ body {
   background-color: #fef6f6;
   margin: 0 auto;
 }
+.card-h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
 .card-img {
   height: 50px;
 }
@@ -218,7 +313,6 @@ body {
   width: 90%;
   height: 30em;
   margin: 0 auto;
-  background-image: url(Images/Group\ 39.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -226,6 +320,12 @@ body {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+}
+.pool1 {
+  background-image: url(Images/Group\ 39.png);
+}
+.pool2 {
+  background-image: url(Images/Group\ 40.png);
 }
 .booking-area {
   background-color: rgba(247, 251, 255, 0.853);
@@ -275,13 +375,52 @@ body {
 }
 
 /* booking end */
+
+/* airlines start */
+.airlines {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  margin-bottom: 100px;
+}
+.airlines-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+.airlines-plane {
+  padding-top: 50px;
+}
+.airlines-plane-area {
+  display: flex;
+  gap: 20px;
+}
+.air-box {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 30%;
+  gap: 20px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #7a7a7a5e;
+}
+.air-box:hover {
+  box-shadow: 10px 10px 10px #7d0fc638;
+}
+.air-box img {
+  height: 36px;
+}
+
+/* airlines end */
 /* newsletter start */
 .newsletter {
   display: flex;
   gap: 30px;
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 100px 0px 100px 0px;
 }
 .newsletter-area1 {
   border: 1px solid #7d0fc6;
@@ -334,9 +473,14 @@ body {
 
 /* footer start */
 .footer {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 50px 0px;
+}
+.footer-main {
   width: 90%;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,7 +492,7 @@ body {
   text-align: center;
 }
 .text-area p {
-  margin-top: -30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 .social {
@@ -358,4 +502,212 @@ body {
 .social > img {
   height: 3em;
 }
-/* footeer end */
+.footer-last {
+  margin-top: 30px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-last p {
+  margin-top: 20px;
+}
+.logo-img2 {
+  height: 7em;
+}
+
+/* footer end */
+/* mobile view start */
+
+@media screen and (max-width: 566px) {
+  /* header start*/
+  .header {
+    padding: 0px 0px 50px 0px;
+  }
+  .link-text2 {
+    display: none;
+  }
+  .link-img {
+    display: block;
+    height: 40px;
+  }
+  .slider-text h1 {
+    font-size: 35px;
+    padding: 1.5em 0em 0em 0em;
+  }
+  .slider-text p {
+    font-size: 14px;
+  }
+  .form {
+    width: 70%;
+    margin-top: -20px;
+  }
+  .form-area {
+    flex-direction: column;
+  }
+  #when1 {
+    height: 2em;
+    width: 16em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  #when {
+    height: 3em;
+    width: 19em;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  .new {
+    height: 50px;
+    width: 117%;
+  }
+  .btn-header {
+    padding: 15px 96px;
+    margin-left: 0px;
+  }
+  /* header end */
+  /* popular start */
+  .popular {
+    padding: 50px 0px;
+  }
+  .popular-main {
+    flex-direction: column;
+  }
+  .img-size {
+    width: 23em;
+  }
+  .h3-header {
+    font-size: 30px;
+  }
+  .destination {
+    padding-top: 50px;
+  }
+  .destination-area {
+    width: 80%;
+  }
+  .destination-area h3 {
+    margin-bottom: 20px;
+  }
+  .p-primary {
+    font-size: 14px;
+  }
+  .img-box {
+    flex-direction: column;
+  }
+  .maldives {
+    width: 100%;
+  }
+  .indonesia {
+    width: 100%;
+  }
+  .srilanka {
+    width: 100%;
+  }
+  .america {
+    width: 100%;
+  }
+  .kashmir {
+    width: 100%;
+  }
+  .bangladesh {
+    width: 100%;
+  }
+  .bandarban {
+    width: 100%;
+  }
+  /* popular end */
+  /* choose us start */
+  .choose-us {
+    padding-top: 50px;
+  }
+  .choose-us-area {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .choose-us-area h3 {
+    margin-bottom: 10px;
+  }
+  .card-area1 {
+    flex-direction: column;
+  }
+  .card3 {
+    width: 80%;
+  }
+  /* choose us end */
+  /* discount start */
+  .discounts {
+    padding-top: 50px;
+  }
+  .discounts-area {
+    width: 100%;
+  }
+  .booking {
+    height: 37em;
+  }
+  .booking-1 {
+    display: none;
+  }
+  .booking-area {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .box {
+    margin-right: 10px;
+  }
+  .b-heading {
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-top: 5px;
+  }
+  .p-primary {
+    font-size: 14px;
+  }
+  /* discount end */
+  /* airlines start */
+
+  .airlines {
+    padding: 50px 0px 50px 0px;
+    margin-bottom: 20px;
+  }
+  .airlines-text {
+    width: 90%;
+  }
+  .airlines-plane-area {
+    flex-direction: column;
+  }
+  .air-box {
+    width: 85%;
+  }
+
+  /* airlines end */
+  /* newsletter start */
+  .newsletter {
+    flex-direction: column;
+    padding: 50px 0px 50px 0px;
+  }
+  .newsletter-area1 {
+    width: 80%;
+  }
+  .newsletter-area2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .save {
+    padding: 15px;
+    width: 40%;
+    margin-left: 9.5em;
+    margin-top: -7em;
+  }
+
+  /* newsletter end */
+  /* footer start */
+  .logo-img2 {
+    height: 5em;
+  }
+  .social > img {
+    height: 2em;
+  }
+  /* footer end */
+}
+/* mobile view end */
